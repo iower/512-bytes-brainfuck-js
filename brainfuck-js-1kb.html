@@ -1,10 +1,11 @@
-<textarea id="i">
-++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.>.
-</textarea><textarea id="o"></textarea>
+<textarea id="i">++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.>.</textarea>
+<textarea id="o"></textarea>
 <script>
-i.oninput=e=>{
-i=e.target.value
-o.value=i
-}
+(i.oninput=_=>{
+ p=0;a=[];
+ (o.value=i.value).split('').map(t=>{
+  console.log(t)
+ })
+})()
 </script>
 <style>#i,#o{height:99%;width:49%
