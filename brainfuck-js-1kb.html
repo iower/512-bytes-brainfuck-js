@@ -2,12 +2,13 @@
 <textarea id="o"></textarea>
 <script>
 (i.oninput=_=>{
- p=0;a=[];
- (o.value=i.value).split('').map(t=>{
+ p=0;a=[];o.value=''
+ i.value.split('').map(t=>{
   t=='+'&&(a[p]=(a[p]|0)+1)
   t=='-'&&(a[p]=(a[p]|0)-1)
   t=='>'&&p++
   t=='<'&&p--
+  t=='.'&&(o.value+=String.fromCharCode(a[p]))
   console.log(t, a)
  })
 })()
