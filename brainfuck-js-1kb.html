@@ -4,7 +4,9 @@
 (i.oninput=_=>{
  p=0;a=[];
  (o.value=i.value).split('').map(t=>{
-  console.log(t)
+  t=='+' && (a[p]=(a[p]|0)+1)
+  t=='-' && (a[p]=(a[p]|0)-1)
+  console.log(t, a)
  })
 })()
 </script>
